@@ -72,7 +72,7 @@ let tests_list = [
 
 let (encode_tests_list, decode_tests_list) = List.split tests_list
 
-let tests = "test suite for mpris" >::: [
+let tests = "test suite for ocaml-cobs" >::: [
   "test suite for cobs encoder" >::: encode_tests_list;
   "test suite for cobs decoder" >::: decode_tests_list;
   "test suite for cobs encoder/decoder (misc.)" >::: [
