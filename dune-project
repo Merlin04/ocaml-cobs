@@ -19,6 +19,6 @@
  (name cobs)
  (synopsis "Consistent Overhead Byte Stuffing (COBS) encoding and decoding")
  (description "A lightweight Consistent Overhead Byte Stuffing (COBS) encoder and decoder written in pure OCaml with no dependencies")
- (depends ocaml dune (ounit2 :with-test)))
+ (depends (ocaml (>= 4.08)) (ocaml ( and :with-test (>= 4.11))) dune (ounit2 :with-test)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

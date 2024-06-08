@@ -10,7 +10,8 @@ homepage: "https://github.com/Merlin04/ocaml-cobs"
 doc: "https://github.com/Merlin04/ocaml-cobs"
 bug-reports: "https://github.com/Merlin04/ocaml-cobs/issues"
 depends: [
-  "ocaml"
+  "ocaml" {>= "4.08"}
+  "ocaml" {with-test & >= "4.11"}
   "dune" {>= "3.15"}
   "ounit2" {with-test}
   "odoc" {with-doc}

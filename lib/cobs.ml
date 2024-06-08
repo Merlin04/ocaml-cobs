@@ -81,5 +81,5 @@ let from_cobs ?(delim : char option) (b : bytes) =
     ) else (
       decode_group_at b_start out_pos
     )
-  in
-  decode_group_at 0 0
+  in try decode_group_at 0 0 with
+    | Invalid_argument _ -> invalid_arg "Cobs.from_cobs"
